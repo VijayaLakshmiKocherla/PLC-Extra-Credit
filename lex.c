@@ -84,6 +84,7 @@ int main(void)
     return 0;
 }
 
+// Syntax Analyzer/ Parser for Java if
 // ifstmt --> function code for if statement
 // Java if --> if '(' <boolexpr> ')' <statement> [else <statement>]
 void ifstmt(void)
@@ -115,6 +116,7 @@ void ifstmt(void)
     }
 }
 
+// Syntax Analyzer/ Parser for Java for
 // for - function code for for loop
 // Java for --> for '(' <options> ')' { <statement> }
 
@@ -157,6 +159,7 @@ void forLoop(void)
     }
 }
 
+// Syntax Analyzer/ Parser for Java forEach
 // forEach - function code for foreach loop
 // Java foreach --> foreach '(' <options> ')' <statement>
 
@@ -216,7 +219,8 @@ void options(void)
     }
 }
 
-// whileLoop - function code for do-while loop
+// Syntax Analyzer/ Parser for Java while
+// whileLoop - function code for while loop
 // Java while --> while '(' <condition> ')' '{' <statement> '}'
 
 void whileLoop(void)
@@ -251,6 +255,8 @@ void whileLoop(void)
     }
 }
 
+
+// Syntax Analyzer/ Parser for Java do-while
 // do-while - function code for do-while loop
 // Java do-while --> do '{' <statement> '}' while '(' <condition> ')'
 
@@ -300,6 +306,7 @@ void doWhile(void)
     }
 }
 
+// Syntax Analyzer/ Parser for Java Block
 // block - function code for block
 // block --> '{' <statement> '}'
 void block(void)
@@ -316,6 +323,7 @@ void block(void)
     }
 }
 
+// Syntax Analyzer/ Parser for Java Assignment Statement
 // <assignmentstmt> identifier = <term>;
 // <term> → identifier | int_literal
 
@@ -337,6 +345,7 @@ void assignmentstmt(void)
         error();
 }
 
+// Parses term
 void term(void)
 {
     /* Determine which RHS */
@@ -346,6 +355,8 @@ void term(void)
         error();
 }
 
+
+// Syntax Analyzer/ Parser for Java Switch
 // switchStmt - function code for Switch Statement
 // Java switch ( <expression> ) '{' case value: <statement> '}'
 // value - 0 | 1
@@ -389,6 +400,7 @@ void switchStmt(void)
     }
 }
 
+// Syntax Analyzer/ Parser for Java Return
 // returnStmt - function code for return statement
 // Java return - return returnvalue;
 // returnvalue - 0 | 1
